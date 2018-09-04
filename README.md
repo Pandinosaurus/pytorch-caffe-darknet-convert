@@ -9,6 +9,9 @@ This repository is specially designed for [pytorch-yolo2](https://github.com/mar
 - [x] pytorch2darknet : pytorch2caffe then caffe2darknet
 - [x] shrink_bn_caffe : shrink batchnorm and scale layer in caffe model automatically
 
+Pb : KeyError: 'ExpandBackward'
+Solution : installing pytorch 0.2.0 and torchvision 0.1.8 
+
 # Convert pytorch -> caffe -> darknet
 ```
 1. python main.py -a resnet50-pytorch --pretrained -e /home/xiaohang/ImageNet/
