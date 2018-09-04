@@ -9,8 +9,10 @@ This repository is specially designed for [pytorch-yolo2](https://github.com/mar
 - [x] pytorch2darknet : pytorch2caffe then caffe2darknet
 - [x] shrink_bn_caffe : shrink batchnorm and scale layer in caffe model automatically
 
-Pb : KeyError: 'ExpandBackward'
+Pb : KeyError: 'ExpandBackward' <br>
 Solution : installing pytorch 0.2.0 and torchvision 0.1.8 
+( use virtualenv + pip to manage my python environment. I just created a new virtualenv and installed directly from pytorch git repo.
+pip install git+https://github.com/pytorch/pytorch.git@v0.2.0 torchvision==0.1.8 )
 
 # Convert pytorch -> caffe -> darknet
 ```
