@@ -12,7 +12,7 @@ This repository is specially designed for [pytorch-yolo2](https://github.com/mar
 Pb : KeyError: 'ExpandBackward' <br>
 Solution : installing pytorch 0.2.0 and torchvision 0.1.8 
 ( use virtualenv + pip to manage my python environment. I just created a new virtualenv and installed directly from pytorch git repo.
-pip install git+https://github.com/pytorch/pytorch.git@v0.2.0 torchvision==0.1.8 )
+``` pip install git+https://github.com/pytorch/pytorch.git@v0.2.0 torchvision==0.1.8 ``` )
 
 # Convert pytorch -> caffe -> darknet
 ```
