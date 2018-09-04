@@ -10,10 +10,13 @@ This repository is specially designed for [pytorch-yolo2](https://github.com/mar
 - [x] shrink_bn_caffe : shrink batchnorm and scale layer in caffe model automatically
 
 Pb : KeyError: 'ExpandBackward' <br>
-Solution : installing pytorch 0.2.0 and torchvision 0.1.8 
-( use virtualenv + pip to manage my python environment. I just created a new virtualenv and installed directly from pytorch git repo.
-``` pip install git+https://github.com/pytorch/pytorch.git@v0.2.0 torchvision==0.1.8 ``` )
-
+Solution : installing pytorch 0.2.0 and torchvision 0.1.8. Use virtualenv + pip to manage my python environment. The following wheel depends on your python version.
+``` 
+    pip install pip3 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post2-cp35-cp35m-manylinux1_x86_64.whl
+```
+```
+    pip install torchvision==0.1.8 ``` 
+```
 # Convert pytorch -> caffe -> darknet
 ```
 1. python main.py -a resnet50-pytorch --pretrained -e /home/xiaohang/ImageNet/
